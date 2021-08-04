@@ -1,30 +1,26 @@
 package com.asengstudio.movieapp2;
 
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.lifecycle.Observer;
-import androidx.lifecycle.ViewModelProvider;
-
 import android.content.Context;
 import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
 import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.RatingBar;
 import android.widget.TextView;
 
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.lifecycle.Observer;
+import androidx.lifecycle.ViewModelProvider;
+
 import com.asengstudio.movieapp2.models.MovieDetailsModel;
 import com.asengstudio.movieapp2.models.MovieModel;
-import com.asengstudio.movieapp2.moviedb.Movie;
 import com.asengstudio.movieapp2.moviedb.MovieDatabase;
 import com.asengstudio.movieapp2.moviedb.MovieDetails;
 import com.asengstudio.movieapp2.viewmodels.MovieDetailsViewModel;
 import com.bumptech.glide.Glide;
 
-import java.util.ArrayList;
-import java.util.List;
 import java.util.Random;
 
 public class MovieDetailsActivity extends AppCompatActivity implements View.OnClickListener {
